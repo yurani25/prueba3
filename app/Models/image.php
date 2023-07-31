@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class image extends Model
 {
     use HasFactory;
+    
     protected $guarded = [];
-    use HasFactory;
     public function imageable(){
         return $this->morphTo();
     }
